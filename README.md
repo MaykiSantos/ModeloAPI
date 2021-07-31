@@ -71,5 +71,9 @@ OBS: Quando o terminal for fechado a API ternimará sua execução.
   <p>
   Documentação feita utilizando o Postman.</br>
   Documantação: https://documenter.getpostman.com/view/12149762/TzsYM8tY
+  </br>
+  <b>Usuario e senha para autenticação:</br>
+  Email: teste@gmail.com,</br>
+  Senha: 123456</b></br>
   </p>
 </div>
