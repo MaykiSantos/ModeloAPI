@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import br.com.mayki.modeloAPI.Views.Dto.ErroDto;
-import br.com.mayki.modeloAPI.Views.Dto.ErroParamDto;
 
 @RestControllerAdvice
 public class InterceptadorDeErros {

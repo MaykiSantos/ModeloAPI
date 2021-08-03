@@ -1,7 +1,6 @@
 package br.com.mayki.modeloAPI.Controller;
 
 import java.net.URI;
-import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;

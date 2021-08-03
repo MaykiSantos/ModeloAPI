@@ -7,16 +7,14 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import br.com.mayki.modeloAPI.Models.Entity.Usuario;
 import br.com.mayki.modeloAPI.Models.Repository.UsuarioRepository;
 import br.com.mayki.modeloAPI.Services.TokenService;
+
 
 public class AutenticacaoTokenFilter extends OncePerRequestFilter {
 
@@ -27,6 +25,7 @@ public class AutenticacaoTokenFilter extends OncePerRequestFilter {
 		this.tokenService = tokenService;
 		this.usuarioRepository = usuarioRepository;
 	}
+
 
 	
 	@Override

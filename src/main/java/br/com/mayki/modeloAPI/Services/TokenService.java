@@ -11,13 +11,9 @@ import org.springframework.stereotype.Service;
 
 import br.com.mayki.modeloAPI.Models.Entity.Usuario;
 import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.MalformedJwtException;
-import io.jsonwebtoken.UnsupportedJwtException;
 import io.jsonwebtoken.security.Keys;
-import io.jsonwebtoken.security.SignatureException;
 
 @Service
 public class TokenService {
@@ -47,9 +43,11 @@ public class TokenService {
 		return token;
 	}
 
+	@SuppressWarnings("unused")
 	public boolean validaToken(String token) {
 		try {
 			SecretKey keyAplicacao = Keys.hmacShaKeyFor(senhaAplicacao.getBytes(StandardCharsets.UTF_8));
+			
 			
 			Jws<Claims> claimsJws = Jwts.parserBuilder()
 			.setSigningKey(keyAplicacao).build().parseClaimsJws(token);

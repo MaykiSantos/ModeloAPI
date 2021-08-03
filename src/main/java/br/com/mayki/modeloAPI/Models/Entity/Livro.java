@@ -9,10 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import br.com.mayki.modeloAPI.Views.Dto.CategoriaDto;
 
 @Entity(name = "Livro")
 @Table(name = "livros")
